@@ -1,0 +1,7 @@
+Filter unique objects in array using properties
+
+array.filter((thing, index, self) =>
+  index === self.findIndex((t) => (
+    t.place === thing.place && t.name === thing.name
+  ))
+)
